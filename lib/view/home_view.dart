@@ -1,3 +1,4 @@
+import 'package:base_client/controllers/test_controller.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatefulWidget {
@@ -8,6 +9,8 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
+
+  TestController testController = TestController();
 
   @override
   Widget build(BuildContext context) {
@@ -24,6 +27,7 @@ class _HomeViewState extends State<HomeView> {
           children: [
             ElevatedButton(
               onPressed: () {
+                testController.getPosts();
               },
               child: const Text('Get Data'),
             ),
