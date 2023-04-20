@@ -8,6 +8,7 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,9 +20,11 @@ class _HomeViewState extends State<HomeView> {
         width: double.maxFinite,
         height: double.maxFinite,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+              },
               child: const Text('Get Data'),
             ),
           ],
